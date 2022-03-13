@@ -1,6 +1,5 @@
 #!/usr/local/bin/python3
 import sys
-import random
 import time
 
 args = sys.argv
@@ -26,7 +25,8 @@ while x < lines:
 	elif program[x] == 'gEr':
 		ger_var = next_line
 	elif program[x] == "geR":
-		time.sleep(next_line)
+		time.sleep(int(next_line))
+		x += 1
 	else:
 		raise WHAT('WHAT IS THAT (unknown instruction)??')
 	x += 1
