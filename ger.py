@@ -28,7 +28,7 @@ if not args[0] == '-h':
 		elif program[x] == 'GER':
 			ger_push(input())
 		elif program[x] == 'Ger':
-			print(ger_stack[len(ger_stack) - 1])
+			print(ger_stack[len(ger_stack) - 1], end = '')
 			ger_pop()
 		elif program[x] == 'gEr':
 			ger_push(next_line)
@@ -38,6 +38,7 @@ if not args[0] == '-h':
 		elif program[x] == '':
 			pass
 		else:
+			# Error thing
 			raise WHAT(f'GER: SYNTAX ERROR: {program[x]} AT LINE {x + 1}!!!')
 		x += 1
 
