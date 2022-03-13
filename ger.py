@@ -24,11 +24,15 @@ if not args[0] == '-h':
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
-			print(program[x + 1])
+			if program[x + 1] == '\\n':
+				print('\n')
+			else:
+				print(program[x + 1], end = '')
+			x += 1
 		elif program[x] == 'GER':
 			ger_push(str(input()))
 		elif program[x] == 'Ger':
-			print(ger_stack[len(ger_stack) - 1])
+			print(ger_stack[len(ger_stack) - 1], end = '')
 			ger_pop()
 		elif program[x] == 'gEr':
 			ger_push(next_line)
@@ -36,10 +40,12 @@ if not args[0] == '-h':
 			time.sleep(int(next_line))
 			x += 1
 		elif program[x] == 'GEr':
+			# Does truth-machine thing
 			if int(ger_stack[len(ger_stack) - 1]) == 1:
 				while True:
 					print(1)
-			pass
+			print(0)
+			ger_pop()
 		elif program[x] == '':
 			pass
 		else:
@@ -48,4 +54,4 @@ if not args[0] == '-h':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.1.0')
+	print('Version: 1.1.1')
