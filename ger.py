@@ -34,4 +34,4 @@ if not args[0] == '-h':
 
 else:
 	print('Usage: ger <file>')
-	print('Version: 1.0.1')
+	print('Version: 1.0.3')
