@@ -30,7 +30,7 @@ if not args[0] == '-h':
 			x += 1
 		else:
 			# Just-A-Unity-Dev made most of this error except capitalization
-			raise WHAT(f'GERRRRR: SYNTAX EERROR, UNKNOWN INSTRUCTION AT LINE {x}!!!!!! AAAAAAAAAAA')
+			raise WHAT(f'GERRRRR: SYNTAX EERROR, UNKNOWN INSTRUCTION AT LINE {x + 1}!!!!!! AAAAAAAAAAA')
 		x += 1
 
 else:
