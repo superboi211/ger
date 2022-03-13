@@ -28,6 +28,8 @@ if not args[0] == '-h':
 				print('\n', end = '')
 			elif program[x + 1] == '(space)':
 				print(' ', end = '')
+			elif program[x + 1] == '(tab)'
+				print('\t', end = '')
 			else:
 				print(program[x + 1], end = '')
 			x += 1
@@ -40,8 +42,8 @@ if not args[0] == '-h':
 			ger_push(next_line)
 		elif program[x] == 'geR':
 			time.sleep(int(next_line))
-			x += 1
-		elif program[x] == 'GEr':
+			x += 1rgregr
+		elif program[x] == 'ge r':
 			# Does truth-machine thing
 			if int(ger_stack[len(ger_stack) - 1]) == 1:
 				while True:
@@ -56,4 +58,4 @@ if not args[0] == '-h':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.2.0')
+	print('Version: 1.2.1')
