@@ -24,8 +24,7 @@ if not args[0] == '-h':
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
-			print(next_line)
-			x += 1
+			print(program[x + 1])
 		elif program[x] == 'GER':
 			ger_push(input())
 		elif program[x] == 'Ger':
@@ -33,7 +32,6 @@ if not args[0] == '-h':
 			ger_pop()
 		elif program[x] == 'gEr':
 			ger_push(next_line)
-			x += 1
 		elif program[x] == "geR":
 			time.sleep(int(next_line))
 			x += 1
