@@ -28,10 +28,13 @@ if not args[0] == '-h':
 		elif program[x] == "geR":
 			time.sleep(int(next_line))
 			x += 1
+		elif program[x] == '':
+			pass
 		else:
-			raise WHAT('WHAT IS THAT (unknown instruction)??')
+			# 
+			raise WHAT(f'GERRRRR: WHAT IS THAT (unknown instruction)?? AT LINE {x} AHHHHHHHHHHH')
 		x += 1
 
 else:
-	print('Usage: ger <file>')
-	print('Version: 1.0')
+	print('Usage: python3 ger.py <file>')
+	print('Version: 1.0.1')
