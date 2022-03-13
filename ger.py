@@ -29,9 +29,9 @@ if not args[0] == '-h':
 			time.sleep(int(next_line))
 			x += 1
 		else:
-			raise WHAT('WHAT IS THAT (unknown instruction)??')
+			raise WHAT(f'GER: Syntax Error, unknown instruction {program[x]}\n\t at: line {x}')
 		x += 1
 
 else:
 	print('Usage: ger <file>')
-	print('Version: 1.0')
+	print('Version: 1.0.1')
