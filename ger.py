@@ -8,31 +8,41 @@ x = 0
 if not args[0] == '-h':
 	program = open(args[0], 'r+').read().split('\n')
 	lines = len(program)
-	ger_var = None
+	ger_stack = []
 	next_line = program[x + 1]
 
 	# A class used for making exception
 	class WHAT(Exception):
 		pass
-
+	
+	def ger_push(what_push):
+		ger_stack.append(what_push)
+	
+	def ger_pop():
+		ger_stack.pop()
+	
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
 			print(next_line)
+			x += 1
 		elif program[x] == 'GER':
-			ger_var = input()
+			ger_push(input())
 		elif program[x] == 'Ger':
-			print(ger_var)
+			print(ger_stack[len(ger_stack) - 1])
+			ger_pop()
 		elif program[x] == 'gEr':
-			ger_var = next_line
+			ger_push(next_line)
+			x += 1
 		elif program[x] == "geR":
 			time.sleep(int(next_line))
 			x += 1
+		elif program[x] == '':
+			pass
 		else:
-			raise WHAT(f'GER: SYNTAX ERROR, UNKNOWN INSTRUCTION: {program[x]} AT LINE {x}!!!')
+			raise WHAT(f'GER: SYNTAX ERROR: {program[x]} AT LINE {x + 1}!!!')
 		x += 1
 
 else:
-	print('Usage: ger <file>')
-
-	print('Version: 1.0.3')
+	print('Usage: python3 ger.py <file>')
+	print('Version: 1.0.7')
