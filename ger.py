@@ -24,8 +24,10 @@ if not args[0] == '-h':
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
-			if program[x + 1] == '\\n':
-				print('\n')
+			if program[x + 1] == '(newline)':
+				print('\n', end = '')
+			elif program[x + 1] == '(space)':
+				print(' ', end = '')
 			else:
 				print(program[x + 1], end = '')
 			x += 1
@@ -54,4 +56,4 @@ if not args[0] == '-h':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.1.1')
+	print('Version: 1.2.0')
