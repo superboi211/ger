@@ -29,7 +29,7 @@ if not args[0] == '-h':
 			time.sleep(int(next_line))
 			x += 1
 		else:
-			raise WHAT(f'GER: Syntax Error, unknown instruction {program[x]}\n\t at: line {x}')
+			raise WHAT(f'GER: SYNTAX ERROR, UNKNOWN INSTRUCTION: {program[x]} AT LINE {x}!!!')
 		x += 1
 
 else:
