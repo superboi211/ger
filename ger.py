@@ -26,15 +26,20 @@ if not args[0] == '-h':
 		if program[x] == 'ger':
 			print(program[x + 1])
 		elif program[x] == 'GER':
-			ger_push(input())
+			ger_push(str(input()))
 		elif program[x] == 'Ger':
 			print(ger_stack[len(ger_stack) - 1])
 			ger_pop()
 		elif program[x] == 'gEr':
 			ger_push(next_line)
-		elif program[x] == "geR":
+		elif program[x] == 'geR':
 			time.sleep(int(next_line))
 			x += 1
+		elif program[x] == 'GEr':
+			if int(ger_stack[len(ger_stack) - 1]) == 1:
+				while True:
+					print(1)
+			pass
 		elif program[x] == '':
 			pass
 		else:
@@ -43,4 +48,4 @@ if not args[0] == '-h':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.0.7')
+	print('Version: 1.1.0')
