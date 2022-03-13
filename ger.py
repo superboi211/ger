@@ -24,20 +24,26 @@ if not args[0] == '-h':
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
-			if program[x + 1] == '(newline)':
-				print('\n', end = '')
-			elif program[x + 1] == '(space)':
-				print(' ', end = '')
-			else:
-				print(program[x + 1], end = '')
-			x += 1
+			try:
+				if program[x + 1] == '(newline)':
+					print('\n', end = '')
+				elif program[x + 1] == '(space)':
+					print(' ', end = '')
+				else:
+					print(program[x + 1], end = '')
+				x += 1
+			except:
+				raise WHAT('UNEXPECTED END OF FILE!!!')
 		elif program[x] == 'GER':
 			ger_push(str(input()))
 		elif program[x] == 'Ger':
 			print(ger_stack[len(ger_stack) - 1], end = '')
 			ger_pop()
 		elif program[x] == 'gEr':
-			ger_push(next_line)
+			try:
+				ger_push(next_line)
+			except:
+				raise WHAT('UNEXPECTED END OF FILE!!!')
 		elif program[x] == 'geR':
 			time.sleep(int(next_line))
 			x += 1
