@@ -7,7 +7,9 @@ Examples:
 Hello World:
 
     ger
-    Hello, World!
+    ; Hello, World!
+    ger
+    ; insert_newline
 
 cat:
 
