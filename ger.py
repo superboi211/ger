@@ -11,6 +11,7 @@ if not args[0] == '--help':
 	lines = len(program)
 	ger_stack = []
 	next_line = program[x + 1]
+	gp_array = re.split('; ', program[x + 1])
 
 	# A class used for making exception
 	class WHAT(Exception):
@@ -31,14 +32,13 @@ if not args[0] == '--help':
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
-			str_array = re.split('; ', program[x + 1])
 			try:
-				if str_array[1] == '(newline)':
+				if gp_array[1] == '(newline)':
 					print('\n', end = '')
-				elif str_array[1] == '(space)':
+				elif gp_array[1] == '(space)':
 					print(' ', end = '')
 				else:
-					print(str_array[1], end = '')
+					print(gp_array[1], end = '')
 				x += 1
 			except:
 				raise WHAT('UNEXPECTED END OF FILE!!!')
@@ -73,4 +73,4 @@ if not args[0] == '--help':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.4.0')
+	print('Version: 1.4.1')
