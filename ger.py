@@ -21,6 +21,11 @@ if not args[0] == '--help':
 	def ger_pop():
 		ger_stack.pop()
 	
+	#### Note:
+	# x += 1
+	# skips a line
+	####
+	
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
@@ -67,4 +72,4 @@ if not args[0] == '--help':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.3.0')
+	print('Version: 1.3.1')
