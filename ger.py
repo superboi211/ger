@@ -1,6 +1,7 @@
 #!/usr/local/bin/python3
 import sys
 import time
+import re
 
 args = sys.argv
 del args[0]
@@ -21,21 +22,23 @@ if not args[0] == '--help':
 	def ger_pop():
 		ger_stack.pop()
 	
-	#### Note:
+	###########
+	# Note:
 	# x += 1
 	# skips a line
-	####
+	###########
 	
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
+			str_array = re.split('; ', program[x + 1])
 			try:
-				if program[x + 1] == '(newline)':
+				if str_array[1] == '(newline)':
 					print('\n', end = '')
-				elif program[x + 1] == '(space)':
+				elif str_array[1] == '(space)':
 					print(' ', end = '')
 				else:
-					print(program[x + 1], end = '')
+					print(str_array[1], end = '')
 				x += 1
 			except:
 				raise WHAT('UNEXPECTED END OF FILE!!!')
@@ -60,16 +63,14 @@ if not args[0] == '--help':
 					print(1)
 			print(0)
 			ger_pop()
-		elif program[x] == 'GEr':
-			sys.exit('GEr INSTRUCTION DETECTED!!!!')
 		elif program[x] == '':
 			pass
 		else:
 			# Error thing
 			
-			raise WHAT(f'GER: SYNTAX ERROR: {program[x]} AT LINE {x + 1}!!!')
+			raise WHAT(f'GER: SYNTAX ERROR: WHAT IS {program[x]}??? THE ERROR IS AT LINE {x + 1}!!!')
 		x += 1
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.3.1')
+	print('Version: 1.4.0')
