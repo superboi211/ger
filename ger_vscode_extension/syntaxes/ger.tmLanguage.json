@@ -17,7 +17,7 @@
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.ger",
+			"name": "string.semicolon.ger",
 			"begin": "; ",
 			"end": "\n",
 			"patterns": [
@@ -26,6 +26,11 @@
 					"match": "\\b(insert_newline|insert_space)\\b"
 				}
 			]
+		},
+		"comments": {
+			"name": "comment.exclamation.ger",
+			"begin": "!= ",
+			"end": "\n"
 		}
 	},
 	"scopeName": "source.ger"
