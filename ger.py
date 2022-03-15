@@ -67,7 +67,6 @@ if not args[0] == '--help':
 			pass
 		else:
 			# Error thing
-			
 			raise WHAT(f'GER: SYNTAX ERROR: WHAT IS {program[x]}??? THE ERROR IS AT LINE {x + 1}!!!')
 		x += 1
 
