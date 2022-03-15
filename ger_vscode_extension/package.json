@@ -1,0 +1,25 @@
+{
+    "name": "ger-highlight",
+    "displayName": "Ger Highlight",
+    "description": "",
+    "version": "1.2.1",
+    "engines": {
+        "vscode": "^1.65.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "ger",
+            "aliases": ["Ger", "ger"],
+            "extensions": [".ger"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "ger",
+            "scopeName": "source.ger",
+            "path": "./syntaxes/ger.tmLanguage.json"
+        }]
+    }
+}

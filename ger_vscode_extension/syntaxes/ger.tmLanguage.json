@@ -1,0 +1,32 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Ger",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.instructions.ger",
+				"match": "\\b(ger|GER|Ger|ge r|gEr|geR)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.ger",
+			"begin": "; ",
+			"end": "\n",
+			"patterns": [
+				{
+					"name": "constant.string_keywords.ger",
+					"match": "\\b(insert_newline|insert_space)\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ger"
+}
