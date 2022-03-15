@@ -5,7 +5,7 @@ import time
 args = sys.argv
 del args[0]
 x = 0
-if not args[0] == '-h':
+if not args[0] == '--help':
 	program = open(args[0], 'r+').read().split('\n')
 	lines = len(program)
 	ger_stack = []
@@ -43,6 +43,7 @@ if not args[0] == '-h':
 			try:
 				ger_push(next_line)
 			except:
+				# End of file when something else needed
 				raise WHAT('UNEXPECTED END OF FILE!!!')
 		elif program[x] == 'geR':
 			time.sleep(int(next_line))
@@ -54,13 +55,16 @@ if not args[0] == '-h':
 					print(1)
 			print(0)
 			ger_pop()
+		elif program[x] == 'GEr':
+			sys.exit('GEr INSTRUCTION DETECTED!!!!')
 		elif program[x] == '':
 			pass
 		else:
 			# Error thing
+			
 			raise WHAT(f'GER: SYNTAX ERROR: {program[x]} AT LINE {x + 1}!!!')
 		x += 1
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.2.1')
+	print('Version: 1.3.0')
