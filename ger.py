@@ -22,20 +22,20 @@ if not args[0] == '--help':
 	def ger_pop():
 		ger_stack.pop()
 	
-	###########
+	#############
 	# Note:
 	# x += 1
 	# skips a line
-	###########
+	#############
 	
 	# Run commands
 	while x < lines:
 		if program[x] == 'ger':
 			str_array = re.split('; ', program[x + 1])
 			try:
-				if str_array[1] == '(newline)':
+				if str_array[1] == 'insert_newline':
 					print('\n', end = '')
-				elif str_array[1] == '(space)':
+				elif str_array[1] == 'insert_space':
 					print(' ', end = '')
 				else:
 					print(str_array[1], end = '')
@@ -68,9 +68,9 @@ if not args[0] == '--help':
 		else:
 			# Error thing
 			
-			raise WHAT(f'GER: SYNTAX ERROR: WHAT IS {program[x]}??? THE ERROR IS AT LINE {x + 1}!!!')
+			raise WHAT(f'GER: SYNTAX ERROR: WHAT IS "{program[x]}"??? THE ERROR IS AT LINE {x + 1}!!!')
 		x += 1
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.4.0')
+	print('Version: 1.4.1')
