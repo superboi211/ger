@@ -41,7 +41,7 @@ if not args[0] == '--help':
 					print(gp_array[1], end = '')
 				x += 1
 			except:
-				raise WHAT('UNEXPECTED END OF FILE!!!')
+				raise WHAT('UNEXPECTED END OF FILE OR NO START OF STRING!!!')
 		elif program[x] == 'GER':
 			ger_push(str(input()))
 		elif program[x] == 'Ger':
@@ -73,4 +73,4 @@ if not args[0] == '--help':
 
 else:
 	print('Usage: python3 ger.py <file>')
-	print('Version: 1.4.1')
+	print('Version: 1.4.2')
