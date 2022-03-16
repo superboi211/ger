@@ -8,15 +8,15 @@ Examples:
 
 Hello World:
 
-    ger
-    ; Hello, World!
-    ger
-    ; insert_newline
+	ger
+	; Hello, World!
+	ger
+	; insert_newline
 
 cat:
 
-    GER
-    Ger
+	GER
+	Ger
 
 How to install VSCode Syntax Highlighting Extension:
 
