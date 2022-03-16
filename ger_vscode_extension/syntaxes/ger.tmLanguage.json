@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
@@ -26,11 +29,6 @@
 					"match": "\\b(insert_newline|insert_space)\\b"
 				}
 			]
-		},
-		"comments": {
-			"name": "comment.exclamation.ger",
-			"begin": "!= ",
-			"end": "\n"
 		}
 	},
 	"scopeName": "source.ger"

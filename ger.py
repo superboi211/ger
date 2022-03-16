@@ -63,7 +63,7 @@ if not args[0] == '--help':
                     print(1)
             print(0)
             ger_pop()
-        elif program[x].startswith('!= '):
+        elif program[x].startswith('COMMENT: '):
             pass
         elif program[x] == '':
             pass
@@ -75,4 +75,4 @@ if not args[0] == '--help':
 
 else:
     print('Usage: python3 ger.py <file>')
-    print('Version: 1.5.0')
+    print('Version: 1.5.1')
