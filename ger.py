@@ -16,7 +16,7 @@ if not args[0] == '--help':
     class WHAT(Exception):
         pass
 
-    def ger_push(what_push):
+    def ger_push(what_push: str):
         ger_stack.append(what_push)
 
     def ger_pop():
