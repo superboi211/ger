@@ -2,19 +2,21 @@ An esolang thing I made
 
     Usage: python3 ger.py <file>.ger
     
+Comments start with "!= "
+
 Examples:
 
 Hello World:
 
-    ger
-    ; Hello, World!
-    ger
-    ; insert_newline
+	ger
+	; Hello, World!
+	ger
+	; insert_newline
 
 cat:
 
-    GER
-    Ger
+	GER
+	Ger
 
 How to install VSCode Syntax Highlighting Extension:
 
