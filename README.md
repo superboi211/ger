@@ -1,4 +1,4 @@
-An esolang thing I made
+-An esolang thing I made
 
     Usage: python3 ger.py <file>.ger
     
@@ -8,6 +8,8 @@ Examples:
 
 Hello World:
 
+	COMMENT: This is a comment. Comments are ignored at runtime.
+	COMMENT: This code prints "Hello, World!" (no double quotes) when run in the interpreter
 	ger
 	; Hello, World!
 	ger
