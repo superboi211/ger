@@ -1,24 +1,24 @@
--An esolang thing I made
+An esolang thing I made
 
     Usage: python3 ger.py <file>.ger
-    
+
 Comments start with "COMMENT: "
 
 Examples:
 
 Hello World:
 
-	COMMENT: This is a comment. Comments are ignored at runtime.
-	COMMENT: This code prints "Hello, World!" (no double quotes) when run in the interpreter
-	ger
-	; Hello, World!
-	ger
-	; insert_newline
+    COMMENT: This is a comment. Comments are ignored at runtime.
+    COMMENT: This code prints "Hello, World!" (no double quotes) when run in the interpreter
+    ger
+    ; Hello, World!
+    ger
+    ; insert_newline
 
 cat:
 
-	GER
-	Ger
+    GER
+    Ger
 
 How to install VSCode Syntax Highlighting Extension:
 
@@ -31,5 +31,3 @@ NOTE: While you can install the VSCode extension, that doesn't mean that you sho
 Now you have syntax highlighting for Ger!!
 
 [Image of syntax highlighting](https://user-images.githubusercontent.com/70241841/158448235-c835b42a-276d-4ad6-a9b4-90d6befa4a33.png)
-
-
