@@ -29,6 +29,11 @@
 					"match": "\\b(insert_newline|insert_space)\\b"
 				}
 			]
+		},
+		"comments": {
+			"name": "comment.line.ger",
+			"begin": "COMMENT: ",
+			"end": "\n"
 		}
 	},
 	"scopeName": "source.ger"
