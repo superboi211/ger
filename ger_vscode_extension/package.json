@@ -2,7 +2,7 @@
     "name": "ger-highlight",
     "displayName": "Ger Highlight",
     "description": "",
-    "version": "1.3.2",
+    "version": "1.4.1",
     "engines": {
         "vscode": "^1.65.0"
     },
@@ -11,16 +11,26 @@
         "Programming Languages"
     ],
     "contributes": {
-        "languages": [{
-            "id": "ger",
-            "aliases": ["Ger", "ger"],
-            "extensions": [".ger"],
-            "configuration": "./language-configuration.json"
-        }],
-        "grammars": [{
-            "language": "ger",
-            "scopeName": "source.ger",
-            "path": "./syntaxes/ger.tmLanguage.json"
-        }]
+        "languages": [
+            {
+                "id": "ger",
+                "aliases": ["Ger", "ger"],
+                "extensions": [".ger"],
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "language": "ger",
+                "scopeName": "source.ger",
+                "path": "./syntaxes/ger.tmLanguage.json"
+            }
+        ],
+        "snippets": [
+            {
+                "language": "ger",
+                "path": "./snippets/ger.json"
+            }
+        ]
     }
 }
