@@ -13,7 +13,7 @@ Hello World:
     ger
     ; Hello, World!
     ger
-    insert_newline
+    ; insert_newline
 
 cat:
 
