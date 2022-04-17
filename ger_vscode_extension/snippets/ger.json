@@ -2,7 +2,7 @@
     "ger": {"prefix": ["ger"], "body": ["ger"]},
     "GER": {"prefix": ["GER"], "body": ["GER"]},
     "Ger": {"prefix": ["Ger"], "body": ["Ger"]},
-    "ge r": {"prefix": ["ge r"], "body": ["ge r"]},
+    "ge_r": {"prefix": ["ge_r"], "body": ["ge_r"]},
     "gEr": {"prefix": ["gEr"], "body": ["gEr"]},
     "geR": {"prefix": ["geR"], "body": ["geR"]}
 }
