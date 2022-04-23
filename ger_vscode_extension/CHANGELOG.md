@@ -6,4 +6,4 @@
 
 ## [1.5.1]
 
-- Bug fixesh
+- Bug fixes
