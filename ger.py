@@ -54,15 +54,16 @@ def instruction(func):
 ########################
 @instruction
 def ger(text):
+    text = text.split("; ")[1]
     global x
     if not text.startswith("; "):
-        err('INVALID INPUT OF "ger". Did you forget to put "; " at the start?')
-    text = text.split("; ")[1]
+        err(f'INVALID INPUT OF "ger". Did you forget to put "; " at the start? ({x + 1})')
     elif text == 'insert_newline':
         print('\n', end='')
     elif text == 'insert_space':
         print(' ', end='')
     else:
+        text = text.split("; ")[1]
         print(text, end='')
 
 

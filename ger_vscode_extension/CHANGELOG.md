@@ -1,9 +1,9 @@
 # Change Log
 
-All notable changes to the "ger-highlight" extension will be documented in this file.
+## [1.5.0]
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
+- Autocomplete **By Sand**
 
-## [Unreleased]
+## [1.5.1]
 
-- Initial release
+- Bug fixes
