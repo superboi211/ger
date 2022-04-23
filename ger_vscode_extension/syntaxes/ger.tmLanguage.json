@@ -16,6 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.instructions.ger",
+				// h
 				"match": "\\b(ger|GER|Ger|ge_r|gEr|geR)\\b"
 			}]
 		},
