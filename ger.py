@@ -1,10 +1,7 @@
 #!/usr/local/bin/python3
-from ast import arg
 from inspect import signature
-import string
 import sys
 import time
-import re
 
 args = sys.argv
 del args[0]
