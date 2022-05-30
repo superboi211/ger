@@ -5,6 +5,6 @@
     "ge_r": {"prefix": ["ge_r"], "body": ["ge_r"]},
     "gEr": {"prefix": ["gEr"], "body": ["gEr"]},
     "geR": {"prefix": ["geR"], "body": ["geR"]},
-    "g_e_r": {"prefix": ["geR"], "body": ["geR"]},
-    "g_er": {"prefix": ["geR"], "body": ["geR"]}
+    "g_e_r": {"prefix": ["g_e_r"], "body": ["g_e_r"]},
+    "g_er": {"prefix": ["g_er"], "body": ["g_er"]}
 }
