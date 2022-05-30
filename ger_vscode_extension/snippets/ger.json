@@ -4,5 +4,7 @@
     "Ger": {"prefix": ["Ger"], "body": ["Ger"]},
     "ge_r": {"prefix": ["ge_r"], "body": ["ge_r"]},
     "gEr": {"prefix": ["gEr"], "body": ["gEr"]},
-    "geR": {"prefix": ["geR"], "body": ["geR"]}
+    "geR": {"prefix": ["geR"], "body": ["geR"]},
+    "g_e_r": {"prefix": ["geR"], "body": ["geR"]},
+    "g_er": {"prefix": ["geR"], "body": ["geR"]}
 }

@@ -9,13 +9,14 @@ x = 0
 
 if len(args) == 0 or args[0] == '--help':
     print('Usage: python3 ger.py <file>')
-    print('Version: 1.6.0')
+    print('Version: 1.7.0')
     exit()
 
 program = open(args[0], 'r+').read().split('\n')
 lines = len(program)
 ger_stack = []
 next_line = program[x + 1]
+tmp = None
 
 def err(error):
     print(f'GER: {error}')
@@ -89,12 +90,25 @@ def geR():
 
 @instruction
 def ge_r():
-    # Does truth-machine thing
-    if int(ger_stack[len(ger_stack) - 1]) == 1:
-        while True:
-            print(1)
-    print(0)
+    # Branches amount of lines forward if the 2 top values of the stack are the same then pops those values
+    if ger_stack[len(ger_stack) - 2] == ger_stack[len(ger_stack) - 1]:
+        x += program[x + 1] + 1
     ger_pop()
+    ger_pop()
+
+@instruction
+def g_er():
+    # Same as ge_r but goes backwards
+    if ger_stack[len(ger_stack) - 2] == ger_stack[len(ger_stack) - 1]:
+        x -= program[x + 1]
+    ger_pop()
+    ger_pop()
+
+@instruction
+def g_e_r():
+    ger_push(program[x + 1])
+    x += 1
+
 ########################
 # IMPORTANT            #
 # WHERE MOST CODE GOES #
