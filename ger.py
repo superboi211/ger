@@ -91,21 +91,24 @@ def geR():
 @instruction
 def ge_r():
     # Branches amount of lines forward if the 2 top values of the stack are the same then pops those values
+    global x
     if ger_stack[len(ger_stack) - 2] == ger_stack[len(ger_stack) - 1]:
-        x += program[x + 1] + 1
+        x += int(program[x + 1])
     ger_pop()
     ger_pop()
 
 @instruction
 def g_er():
     # Same as ge_r but goes backwards
+    global x
     if ger_stack[len(ger_stack) - 2] == ger_stack[len(ger_stack) - 1]:
-        x -= program[x + 1]
+        x -= int(program[x + 1])
     ger_pop()
     ger_pop()
 
 @instruction
 def g_e_r():
+    global x
     ger_push(program[x + 1])
     x += 1
 
