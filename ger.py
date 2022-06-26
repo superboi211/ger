@@ -8,6 +8,7 @@ del args[0]
 x = 0
 
 if len(args) == 0 or args[0] == '--help':
+    # Help message for the user
     print('Usage: python3 ger.py <file>')
     print('Version: 1.7.0')
     exit()
@@ -112,6 +113,11 @@ def g_e_r():
     ger_push(program[x + 1])
     x += 1
 
+@instruction
+def G_er():
+    # Duplicates the top value of the stack
+    ger_push(ger_stack[len(ger_stack) - 1])
+
 ########################
 # IMPORTANT            #
 # WHERE MOST CODE GOES #
@@ -124,6 +130,7 @@ def ger_pop():
     ger_stack.pop()
 
 def runCode():
+    # Run one line of code
     ignore = program[x].startswith('COMMENT: ') or program[x].replace(' ', '') == ''
 
     if (ignore): return

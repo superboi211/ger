@@ -1,5 +1,6 @@
 COMMENT: This is a comment. Comments are ignored at runtime.
-COMMENT: This code prints "Hello, World!" (no double quotes) when run in the interpreter
+COMMENT: Strings start with ; and end with a newline.
+COMMENT: This code prints "Hello, World!" with a newline (no double quotes) when run in the interpreter
 ger
 ; Hello, World!
 ger

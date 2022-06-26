@@ -2,7 +2,7 @@
     "name": "ger-highlight",
     "displayName": "Ger Highlight",
     "description": "",
-    "version": "1.5.1",
+    "version": "1.6.1",
     "engines": {
         "vscode": "^1.65.0"
     },

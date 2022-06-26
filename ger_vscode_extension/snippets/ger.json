@@ -6,5 +6,6 @@
     "gEr": {"prefix": ["gEr"], "body": ["gEr"]},
     "geR": {"prefix": ["geR"], "body": ["geR"]},
     "g_e_r": {"prefix": ["g_e_r"], "body": ["g_e_r"]},
-    "g_er": {"prefix": ["g_er"], "body": ["g_er"]}
+    "g_er": {"prefix": ["g_er"], "body": ["g_er"]},
+    "G_er": {"prefix": ["G_er"], "body": ["G_er"]}
 }
